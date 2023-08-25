@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+:root{
+    --primary-color:#fff;
+    --primary-shade:#f7f5f2;
+    --secondary-color:#000;
+    --secondary-shade:#4b4c4c;
+    --red-color:#d40700;
+    --red-shade:#b20600;
+    --accent-color:#082bf1;
+}
+
+ul li{
+    list-style: none;
+   
+}
+
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background: #30E8BF;  
+    background: -webkit-linear-gradient(to right, #FF8235, #30E8BF); 
+    background: linear-gradient(to right, #FF8235, #30E8BF); 
+    color: var(--primary-color);
+    border: 2px solid black;
+}
+
+.nav-bar{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#span1{
+    color:rgba(0, 0, 0, 0.858);
+}
+
+#span2{
+    color: rgba(0, 0, 0, 0.638);
+}
+
+ul li a{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: var(--accent-color);
+    font-size: 16px;    
+}
+
+button{
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: var(--red-color);
+    color: var(--primary-color);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0 5px;
+    font-weight: 500;
+}
+button:hover{
+    background-color:yellow ;
+    color: black;
+    border: 2px solid var(--red-color);
+}
+
+.btn2{
+    background-color: black;
+    width: 50%;
+}
+
+.content{
+    height: 100vh;
+}
+
+.right img{
+    width: 50%;
+    height: 65%;
+    border-radius: 20px;
+    border: 4px solid black;
+}
+
+h4,p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#span3{
+    color: black;
+    font-size: 100;
+    font-style: italic;
+}
+
+/*about-me-sec*/
+
+.about-me-sec{
+    min-height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(103,121,9,1) 1%, rgba(0,212,255,1) 100%);
+    color: white;
+    border: 2px solid black;
+}
+
+.w55{
+    width: 55%;
+    margin-top: 10px;
+}
+
+img :hover{
+    transform: scale(10);
+}
+
+.right{
+    transition-property: all;
+    transition-duration: 3s;
+    transition-duration: 2s;
+    transition-delay: 0s;
+    transition-timing-function: ease-in;
+}
+
+.image1{
+    height: 55%;
+    width: 30%;
+    border-radius: 8px;
+    border: 4px solid black;
+}
+
+.portfolio-sec{
+    height: 110vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,50,9,1) 1%, rgba(0,255,205,0.6839985994397759) 77%);
+    border: 2px solid black;
+}
+
+.portfolio > h3{
+    color: var(--primary-color);
+    margin-bottom: 50px;
+}
+
+
+
+.portolio-parent{
+    gap: 30px;
+}
+
+.portfolio-child{
+    border: 1px solid var(--red-color);
+    border-radius: 8px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.portfolio-child:hover{
+    transform: scale(1.1);
+    background-color: rgb(14, 233, 244);
+}
+
+.portfolio-child h3{
+    margin-top: 10px;
+}
+
+.portfolio-child p{
+    margin-top: 5px;
+    line-height: 1.4;
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.portfolio-child button{
+    margin: 15px;
+}
+
+.contact-me-sec{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,50,9,1) 1%, rgba(255,211,0,0.6839985994397759) 54%);
+    height: 70vh;
+    padding: 35px 0;
+    color: white;
+}
+
+.contact-us-sec{
+    background-color: darkgray;
+    height: 50vh;
+    padding: 35px 0;
+}
+
+.contact-us h3{
+    color: var(--primary-color);
+}
+
+.contact-details{
+    padding-top: 4rem;
+}
+
+.contact-details h5{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+#email-id{
+    width: 226px;
+    height: 28px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 2px 12px;
+}
+
+.right-sec input{
+    margin-left: 10px;
+}
+
+.right-sec button{
+    margin-left: 35px;
+    margin-top: 15px;
+}
+
+footer{
+    background-color: var(--secondary-shade);
+    padding: 10px 0;
+    color: burlywood;
+}
+
+
+#click, .menu-btn i{
+    display: none;
+}
+
+
+/* @media (max-width:768px){
+    .nav-bar{
+        flex-direction: column;
+        position: relative;
+        background-color: var(--secondary-shade);
+        width: 100%;
+        height: 100vh;
+       
+    }
+ .nav-links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+   
+    
+ }
+ .nav-links ul, .logo, .hire-me-btn{
+    display: none;
+ }
+ .color-box{
+    display: none;
+ }
+ .content{
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+ }
+ .menu-btn i{
+    display: block;
+   
+ }
+ .menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 10px;
+ }
+    
+} */
